@@ -200,12 +200,6 @@ else
     echo "no php-cgi binary found"
 fi
 
-#libphp5.so
-blibphp="$instdir/libs/libphp5.so"
-mkdir $instdir/libs
-cp $srcdir/libs/libphp5.so $instdir/libs/libphp5.so
-ln -fs "$blibphp" "$shbindir/libphp5-$version.so"
-
 ln -fs "$instdir/bin/php-config" "$shbindir/php-config-$version"
 ln -fs "$instdir/bin/phpize" "$shbindir/phpize-$version"
 
