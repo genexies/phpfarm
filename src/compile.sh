@@ -198,7 +198,6 @@ elif [ -f "$bphpcgigcno" ]; then
     ln -fs "$bphpcgigcno" "$shbindir/php-cgi-$version"
 else
     echo "no php-cgi binary found"
-    exit 8
 fi
 
 ln -fs "$instdir/bin/php-config" "$shbindir/php-config-$version"
